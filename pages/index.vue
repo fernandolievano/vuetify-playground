@@ -1,11 +1,36 @@
 <template>
-  <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md6>
-      <h1 class="text-center display-3 mt-5">Imágen de Astronomía del día</h1>
-    </v-flex>
-  </v-layout>
+  <v-container>
+    <v-alert v-if="hasErrors" border="left" type="error">
+      Hubo un error al solicitar la información.
+    </v-alert>
+
+    <APOD v-if="apod" :info="apod" />
+  </v-container>
 </template>
 
 <script>
-export default {}
+import APOD from '@/components/home/APOD'
+
+export default {
+  components: {
+    APOD
+  },
+  async asyncData({ $axios }) {
+    try {
+      const res = await $axios.$get(
+        `planetary/apod?api_key=${process.env.NASA_API_KEY}`
+      )
+
+      return {
+        apod: res,
+        hasErrors: false
+      }
+    } catch (error) {
+      return {
+        apod: null,
+        hasErrors: true
+      }
+    }
+  }
+}
 </script>

@@ -6,8 +6,8 @@ export default {
    ** Headers of the page
    */
   head: {
-    titleTemplate: '%s - ' + 'Vuetify Playground',
-    title: 'Vuetify Playground',
+    titleTemplate: '%s - ' + 'NASA API',
+    title: 'Playground',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -42,13 +42,9 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    '@nuxtjs/pwa',
-    '@nuxtjs/axios',
-    '@nuxtjs/dotenv'
-  ],
+  modules: ['@nuxtjs/pwa', '@nuxtjs/axios', '@nuxtjs/dotenv'],
   axios: {
-    baseUrl: 'https://api.nasa.gov'
+    baseURL: 'https://api.nasa.gov/'
   },
   /*
    ** vuetify module configuration
