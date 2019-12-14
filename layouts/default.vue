@@ -4,6 +4,7 @@
       v-model="drawer"
       :mini-variant="miniVariant"
       :clipped="clipped"
+      inverted-scroll
       fixed
       app
     >
@@ -61,8 +62,7 @@ export default {
       ],
       miniVariant: false,
       right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+      title: `Fer's Playground`
     }
   }
 }
