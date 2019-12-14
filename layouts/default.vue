@@ -32,6 +32,11 @@
       </v-app-bar>
       <v-content>
         <nuxt />
+
+        <v-divider></v-divider>
+        <v-container>
+          <Attribution />
+        </v-container>
       </v-content>
       <v-footer color="grey darken-4">
         <span>&copy; 2019</span>
@@ -41,7 +46,11 @@
 </template>
 
 <script>
+import Attribution from '@/components/home/Attribution'
 export default {
+  components: {
+    Attribution
+  },
   data() {
     return {
       clipped: false,

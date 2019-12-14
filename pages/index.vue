@@ -5,6 +5,15 @@
     </v-alert>
 
     <APOD v-if="apod" :info="apod" />
+
+    <v-layout justify-center text-center>
+      <v-flex xs12 sm6 md4>
+        <h4 class="display-1 mt5">
+          Esta aplicación está construída por motivos educacionales y sin fines
+          de lucro
+        </h4>
+      </v-flex>
+    </v-layout>
   </v-container>
 </template>
 
