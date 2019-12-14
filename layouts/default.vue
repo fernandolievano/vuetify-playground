@@ -34,9 +34,11 @@
         <nuxt />
 
         <v-divider></v-divider>
-        <v-container>
-          <Attribution />
-        </v-container>
+        <fade-zoom-in>
+          <v-container>
+            <Attribution />
+          </v-container>
+        </fade-zoom-in>
       </v-content>
       <v-footer color="grey darken-4">
         <span>&copy; 2019</span>

@@ -1,3 +1,7 @@
+import 'aos/dist/aos.css'
 import AOS from 'aos'
 
-AOS.init()
+export default ({ app }) => {
+  // eslint-disable-next-line new-cap
+  app.AOS = new AOS.init()
+}
