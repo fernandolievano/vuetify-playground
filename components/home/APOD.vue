@@ -1,7 +1,7 @@
 <template>
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
-      <h1 class="text-center display-3 my-5">Imagen de astronomía del día</h1>
+      <h1 class="text-center display-3 my-5">Imagen del día</h1>
     </v-flex>
     <v-flex xs12 text-center>
       <v-img :lazy-src="info.url" :src="info.hdurl" class="my-2"></v-img>
