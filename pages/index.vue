@@ -7,7 +7,7 @@
     <APOD v-if="apod" :info="apod" />
 
     <v-layout justify-center text-center>
-      <v-flex xs12 sm6 md4>
+      <v-flex xs12 sm8>
         <h4 class="display-1 mt5">
           Esta aplicación está construída por motivos educacionales y sin fines
           de lucro
