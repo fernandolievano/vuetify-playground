@@ -44,6 +44,13 @@ export default {
   */
   modules: [
     '@nuxtjs/pwa',
+    [
+      '@nuxtjs/dotenv',
+      {
+        path: '.env',
+        fileName: '.env'
+      }
+    ]
   ],
   /*
   ** vuetify module configuration
