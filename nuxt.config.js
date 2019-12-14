@@ -44,6 +44,7 @@ export default {
   */
   modules: [
     '@nuxtjs/pwa',
+    '@nuxtjs/axios',
     [
       '@nuxtjs/dotenv',
       {
@@ -52,6 +53,9 @@ export default {
       }
     ]
   ],
+  axios: {
+    baseUrl: 'https://api.nasa.gov'
+  },
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
